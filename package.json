@@ -1,5 +1,5 @@
 {
-  "name": "shopify",
+  "name": "Bakemate",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,8 +16,11 @@
     "@fortawesome/react-fontawesome": "^3.1.1",
     "bootstrap": "^5.3.8",
     "fonts": "^0.0.2",
+    "lucide-react": "^0.562.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.12.0",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

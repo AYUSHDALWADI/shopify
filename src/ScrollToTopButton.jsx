@@ -6,7 +6,11 @@ function ScrollToTopButton() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowButton(window.scrollY > 300);
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -16,7 +20,7 @@ function ScrollToTopButton() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth"
     });
   };
 
@@ -24,7 +28,7 @@ function ScrollToTopButton() {
     <>
       {showButton && (
         <button className="scroll-top-btn" onClick={scrollToTop}>
-          ☝️
+          ☝️  
         </button>
       )}
     </>
